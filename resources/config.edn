@@ -9,6 +9,8 @@
  :starters {
             "" ""
             "S" "s"
+            "FRS" "sl"
+            "FRGS" "shr"
             "PS" "sp"
             "GS" "sk"
             "FS" "sh"
