@@ -69,11 +69,12 @@
                                (letfn [(main-guy [vowel-stroke vowel-val ender-stroke ender-val append prepend]
                                          (merge
                                            {(str prepend "KWHR" vowel-stroke ender-stroke) (str "{>}" vowel-val ender-val append)}
-                                           {(str prepend "TKWHR" vowel-stroke ender-stroke) (str "{>}" vowel-val ender-val "e" append)}
-                                           {(str prepend "SKWHR" vowel-stroke ender-stroke) (str "{^}" "{>}" vowel-val ender-val)}
-                                           {(str prepend "STKWHR" vowel-stroke ender-stroke) (str "{^}" "{>}" vowel-val ender-val "e")}))]
+                                           {(str prepend "TKWHR" vowel-stroke ender-stroke) (str "{>}" vowel-val ender-val append "e")}
+                                           {(str prepend "SKWHR" vowel-stroke ender-stroke) (str "{^}" "{>}" vowel-val ender-val append)}
+                                           {(str prepend "STKWHR" vowel-stroke ender-stroke) (str "{^}" "{>}" vowel-val ender-val append "e")}))]
                                  (merge
                                    (main-guy vowel-stroke vowel-val ender-stroke ender-val "" "")
+                                   (main-guy vowel-stroke vowel-val ender-stroke ender-val "r" "+")
                                    (main-guy vowel-stroke vowel-val ender-stroke ender-val "a" "^+")))))
                        {}
                        vowels))
