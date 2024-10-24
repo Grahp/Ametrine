@@ -210,7 +210,8 @@
           "LT" "lt"
           "LD" "ld"
 
-          "PBLGS" "q"
+          "PBLGS" "qu"
+          "*PBLGS" "q"
           "BGT" "cket"
           "RBGT" "xt"
 
@@ -244,6 +245,7 @@
           "RPBD" "nder"
           "*TD" "ty"
           "^*TD" "tty"
+          ;; TODO mn dy
           }
  :vowels {
           "-" ""
@@ -265,6 +267,7 @@
           "AO*" "oa"
           "AU" "au"
           "A*U" "aw"
+          "OE" "oe"
           "A" "a"
           "O" "o"
           "E" "e"
