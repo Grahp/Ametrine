@@ -103,6 +103,7 @@
           ; "PL" "m"
           ; "*PL" "pl"
           "PL" "pl"
+            "PL*D" "ply"
           "*FT" "st"
           "RT" "rt"
           "RL" "rl"
