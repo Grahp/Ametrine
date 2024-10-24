@@ -3,8 +3,8 @@
             [ametrine.utils :as utils]))
 
 
-(defn capitalize-guys
-  "Capsz strokez with number key!"
+(defn capitalize-entries
+  "Capitalizes entries that have a #"
   [entries]
   (into {}
         (map (fn [[k v]]
@@ -84,13 +84,10 @@
 (defn generate
   "Generates the dict"
   [starters vowels enders]
-  (->> (-> (merge
-             (do-starters starters vowels)
-             (do-enders enders vowels))
-           utils/fix-stars
-           utils/fix-carrot)
-       (into {}
-             (map (fn [[k v]]
-                    {k v
-                     (str "#" k) v})))
-       (capitalize-guys)))
+  (-> (merge
+        (do-starters starters vowels)
+        (do-enders enders vowels))
+      utils/fix-stars
+      utils/fix-carrot
+      utils/add-capitalized-entries
+      capitalize-entries))
