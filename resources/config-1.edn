@@ -1,6 +1,8 @@
 ;; Ametrine config file
 ;; Tell me if anything is missing or I will be very angry >:(
 
+;; TODO Organize so harri doesn't block me again
+
 {:settings
  {:output-file "/home/grahp/.config/plover/ametrine.json"}
 
