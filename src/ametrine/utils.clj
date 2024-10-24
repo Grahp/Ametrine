@@ -2,7 +2,9 @@
   (:require [clojure.string :as str]
             [clojure.edn :as edn]
             [clojure.data.json :as json]
-            [clojure.java.io :as io]))
+            [clojure.java.io :as io])
+  (:import [java.nio.file Paths])
+  )
 
 (defn starred
   "Takes a stroke, and returns it's starred version
@@ -57,15 +59,23 @@
                 v})
              entries)))
 
+(defn absolute-path?
+  "Returns whether the given path (string) is absolute"
+  [path]
+  (-> (Paths/get path (into-array String []))
+      (.isAbsolute)))
+
 (defn spit-resource
-  "Spits a file to the resource dir"
-  [name contents]
+  "Spits a file to the resource dir, or to an absolute path"
+  [file-path contents]
   (try
-    (spit (io/file "resources" name) contents)
+    (if (absolute-path? file-path)
+      (spit file-path contents)
+      (spit (io/file "resources" file-path) contents))
 
     (catch Exception e
       (println (.getMessage e))
-      (println "Failed to spit resource:" name)
+      (println "Failed to spit resource:" file-path)
       nil)))
 
 (defn load-resource
