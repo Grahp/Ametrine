@@ -57,10 +57,6 @@
                 v})
              entries)))
 
-(comment
-  (fix-stars {"STWHR-FR" "{^}Lle"})
-  )
-
 (defn load-resource
   "Loads a file from the resource dir.
   Returns nil if the file is not present."
@@ -80,7 +76,3 @@
   (-> dict
       (json/write-str :escape-slash false)
       (str/replace #"," ",\n")))
-
-(comment
-  (transform-json {"TEFT" "test"})
-  )
