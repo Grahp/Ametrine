@@ -1,8 +1,8 @@
-;; Gringerspelling config file
+;; Ametrine config file
 ;; Tell me if anything is missing or I will be very angry >:(
 
 {:settings
- {:output-file "/home/grahp/.config/plover/gringerspelling.json"}
+ {:output-file "/home/grahp/.config/plover/ametrine.json"}
 
  :starters {
             "" ""
@@ -259,27 +259,6 @@
           "U" "u"
           }
  :overrides {
-             ; "^WHR*UPB" "wn"
-             ; "^SWHR*UPB" "{^}wn"
-             ; "^WHR*EFPBL" "men"
-             ; "^SWHR*EFPBL" "{^}men"
-             ; "^WHRA*FPBL" "man"
-             ; "^SWHRA*FPBL" "{^}man"
-             ; "KWHR*UPB" "{>}wn"
-             ; "SKWHR*UPB" "{^}{>}wn"
-             ; "#KWHR*UPB" "{>}{-|}wn"
-             ; "#SKWHR*UPB" "{^}{-|}wn"
-             ;
-             ; "KWHREFPBL" "{>}men"
-             ; "SKWHREFPBL" "{^}{-|}men"
-             ; "#KWHREFPBL" "{-|}men"
-             ; "#SKWHREFPBL" "{^}{-|}men"
-             ;
-             ; "KWHRAFPBL" "{>}man"
-             ; "SKWHRAFPBL" "{^}{-|}man"
-             ; "#KWHRAFPBL" "{-|}man"
-             ; "#SKWHRAFPBL" "{^}{-|}man"
-
              "WHRAO*SZ" "{>}soon"
              "SWHRAO*SZ" "{^}{>}soon"
              "#WHRAO*SZ" "{>}{-|}soon"
@@ -294,4 +273,4 @@
              "#KWHR*EFBL" "{-|}vel"
              "#SKWHR*EFBL" "{^}{-|}vel"
              }
- :version 2}
+ :version 3}
