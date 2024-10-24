@@ -4,7 +4,7 @@
 ;; TODO Organize so harri doesn't block me again
 
 {:settings
- {:output-file "/home/grahp/.config/plover/ametrine.json"}
+ {:output-file "ametrine.json"}
 
  :starters {
             "" ""

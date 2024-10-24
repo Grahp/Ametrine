@@ -57,6 +57,17 @@
                 v})
              entries)))
 
+(defn spit-resource
+  "Spits a file to the resource dir"
+  [name contents]
+  (try
+    (spit (io/file "resources" name) contents)
+
+    (catch Exception e
+      (println (.getMessage e))
+      (println "Failed to spit resource:" name)
+      nil)))
+
 (defn load-resource
   "Loads a file from the resource dir.
   Returns nil if the file is not present."
