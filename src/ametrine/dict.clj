@@ -50,6 +50,7 @@
                                    (apply-main-thing vowel-stroke vowel-val (str starter-stroke "*D") starter-val "ry" "+")
                                    (apply-main-thing vowel-stroke vowel-val (str starter-stroke "*Z") starter-val "rm" "^+")
                                    (apply-main-thing vowel-stroke vowel-val starter-stroke starter-val "r" "+")
+                                   (apply-main-thing vowel-stroke vowel-val (str starter-stroke "Z") starter-val "rs" "+")
                                    (apply-main-thing vowel-stroke vowel-val (str starter-stroke "D") starter-val "d" "") ;; TODO ^d?
                                    (apply-main-thing vowel-stroke vowel-val (str starter-stroke "*D") starter-val "y" "") ;; ^y?
                                    (apply-main-thing vowel-stroke vowel-val (str starter-stroke "*DZ") starter-val "ys" "")
