@@ -261,18 +261,10 @@
           "U" "u"
           }
  :overrides {
-             "WHRAO*SZ" "{>}soon"
-             "SWHRAO*SZ" "{^}{>}soon"
-             "#WHRAO*SZ" "{>}{-|}soon"
-             "#SWHRAO*SZ" "{^}{-|}soon"
+             ; "WHRAO*SZ" "{>}soon"
+             ; "SWHRAO*SZ" "{^}{>}soon"
+             ; "#WHRAO*SZ" "{>}{-|}soon"
+             ; "#SWHRAO*SZ" "{^}{-|}soon"
 
-             "WHRAO*FRL" "{>}throa"
-             "SWHRAO*FRL" "{^}{>}throa"
-             "#WHRAO*FRL" "Throa"
-             "#SWHRAO*FRL" "{^}Throa"
-             "KWHR*EFBL" "vel"
-             "SKWHR*EFBL" "{^}{>}vel"
-             "#KWHR*EFBL" "{-|}vel"
-             "#SKWHR*EFBL" "{^}{-|}vel"
              }
  :version 3}

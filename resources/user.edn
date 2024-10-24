@@ -1,7 +1,8 @@
 ;; User config file
 
 {:settings
- {:output-file "ametrine.json"}
+ ;; You can output straight to your plover config dir
+ {:output-file "/home/grahp/.config/plover/ametrine.json"}
  :starters {
 
             }
@@ -11,4 +12,20 @@
  :vowels {
 
           }
- }
+
+ :overrides {
+             ;; My stuff
+             "WHRAO*SZ" "{>}soon"
+             "SWHRAO*SZ" "{^}{>}soon"
+             "#WHRAO*SZ" "{>}{-|}soon"
+             "#SWHRAO*SZ" "{^}{-|}soon"
+
+             "WHRAO*FRL" "{>}throa"
+             "SWHRAO*FRL" "{^}{>}throa"
+             "#WHRAO*FRL" "Throa"
+             "#SWHRAO*FRL" "{^}Throa"
+             "KWHR*EFBL" "vel"
+             "SKWHR*EFBL" "{^}{>}vel"
+             "#KWHR*EFBL" "{-|}vel"
+             "#SKWHR*EFBL" "{^}{-|}vel"
+             }}
