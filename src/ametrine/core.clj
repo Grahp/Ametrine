@@ -13,4 +13,5 @@
                       (config :enders))
                     (config :overrides))
         output-dict (utils/transform-json dict)]
-    (spit output-file output-dict)))
+    (spit output-file output-dict)
+    (println "Finished.")))

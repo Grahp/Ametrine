@@ -6,7 +6,6 @@
 (defn capitalize-guys
   "Capsz strokez with number key!"
   [entries]
-  (prn "entries:" entries)
   (into {}
         (map (fn [[k v]]
                (if (= \# (first k))
