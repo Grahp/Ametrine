@@ -115,10 +115,12 @@
           "*F" "lf"
           "*FB" "lv"
           "F" "f"
+          ; "*F" "ph"
           "FP" "ch"
           "FR" "m"
             "FRT" "mt"
             "FRD" "md" ;; TODO
+            "FR*D" "my"
 
           "FRPB" "nch"
           "*FRPB" "rch"
@@ -152,6 +154,7 @@
             "^R*T" "rth"
             "R*TD" "rthy"
             "RS" "rs"
+            "RP" "rp"
           "R*D" "ry"
           "RPB" "rn"
           "RPL" "rm"
@@ -179,6 +182,8 @@
             "PB*S" "nst"
             "PBS" "ns"
             "PB*SZ" "nc"
+          "PBL" "nl"
+          "PBL*D" "nly"
           "PB*D" "ny"
           "PBG" "ng"
           "PBG*D" "ngy" ;; TODO
