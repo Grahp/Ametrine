@@ -1,1 +1,3 @@
-Grahp's fingerspelling dict
+# Ametrine
+
+Fingerspelling++ or Shrimple--
