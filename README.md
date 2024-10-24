@@ -1,0 +1,1 @@
+Grahp's fingerspelling dict

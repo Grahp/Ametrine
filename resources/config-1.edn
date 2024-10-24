@@ -1,0 +1,297 @@
+;; Gringerspelling config file
+;; Tell me if anything is missing or I will be very angry >:(
+
+{:settings
+ {:output-file "/home/grahp/.config/plover/gringerspelling.json"}
+
+ :starters {
+            "" ""
+            "S" "s"
+            "PS" "sp"
+            "GS" "sk"
+            "FS" "sh"
+            "RS" "v"
+            "LS" "st"
+            "RLS" "str"
+
+            "PBLGS" "z"
+            "BS" "sw"
+            "^PBS" "bt"
+            "^RPBS" "btr"
+
+            "L" "t"
+            "RL" "tr"
+            "BL" "tw"
+            "FL" "th"
+            "FRL" "thr"
+            "^FRL" "tl" ;; Because of throw
+
+            "RBGS" "j"
+
+            "PL" "f"
+              "FRPL" "fl"
+              "RPL" "fr"
+              "^PL" "ph"
+            "B" "w"
+            "RB" "wr"
+            "FB" "wh"
+
+            "FPS" "sm"
+
+            "R" "r"
+            "BG" "qu"
+            "^BG" "q"
+
+            "FPL" "n"
+            "^FPL" "nn"
+            "RBG" "y"
+
+            "G" "k"
+            "RG" "kr"
+            "FRG" "chr"
+
+            "PBG" "c"
+            "^PBG" "cc"
+            "RPBG" "cr"
+            "FPBG" "ch"
+              "^FRPBG" "chr"
+            "FRPBG" "cl"
+            "PBGS" "sc"
+
+            "FP" "m"
+              "^FP" "mm"
+            "P" "p"
+            "^P" "pp"
+            "^RP" "ppr"
+            "^FRP" "ppl"
+            "RP" "pr"
+            "FRP" "pl"
+
+            "RPB" "br"
+
+            "PG" "x"
+            "*GS" "ex"
+            "*PGS" "exp"
+            "*LGS" "ext"
+            "PGS" "exp"
+
+            "F" "h"
+            "FR" "l"
+            "^FR" "ll"
+            "PB" "b"
+            "FRPB" "bl"
+            "*FRPB" "bel" ;; TODO hmm
+            "LG" "d"
+            "RLG" "dr"
+            "*RLG" "der"
+            "PBLG" "g"
+            "RPBLG" "gr"
+            "FPBLG" "gh"
+            "FRPBLG" "gl"
+
+            "FPLG" "kn"
+            }
+ :enders {
+
+          "*LG" "lk"
+
+          "" ""
+          "*D" "y"
+          ; "PL" "m"
+          ; "*PL" "pl"
+          "PL" "pl"
+          "*FT" "st"
+          "RT" "rt"
+          "RL" "rl"
+          "RL*D" "rly"
+          "RLD" "rld"
+
+          "*F" "lf"
+          "*FB" "lv"
+          "F" "f"
+          "FP" "ch"
+          "FR" "m"
+            "FRT" "mt"
+            "FRD" "md" ;; TODO
+
+          "FRPB" "nch"
+          "*FRPB" "rch"
+
+          "FPB" "fen"
+          "*FPB" "ven"
+
+          "FPL" "pp"
+          "*FPL" "ff"
+
+          "FRP" "mp"
+          "FRPT" "mpt"
+          "FRPL" "mpl"
+          "FRPL*D" "mply"
+          "FRP*D" "mpy"
+          "*FRPL" "mm"
+          "FRB" "mb"
+          "FRBL" "mbl"
+          "FRL" "ml"
+          "FRPBG" "nk"
+            "*FRPBG" "nc"
+            "*FRPBLG" "ncl"
+          "FRPBGS" "nction"
+          "*FR" "ver"
+          "FB" "v"
+          "FT" "ft"
+
+          "R" "r"
+            "RD" "rd"
+            "R*T" "rth"
+            "^R*T" "rth"
+            "R*TD" "rthy"
+            "RS" "rs"
+          "R*D" "ry"
+          "RPB" "rn"
+          "RPL" "rm"
+          "RB" "sh"
+          "RBG" "rk"
+          "RG" "rg"
+          "RB*D" "shy"
+          "*RB" "rb"
+
+          "PBLG" "j"
+          "*PBLG" "ngl"
+
+          "*B" "w"
+          "B" "b"
+          "*BLG" "ckl"
+          "BL" "bl"
+            "BLT" "blet"
+            "BLTD" "bleted"
+            "BL*D" "bly"
+          "BGS" "x"
+
+          "PB" "n"
+            "*PB" "nn"
+            "PB*S" "nst"
+            "PBS" "ns"
+            "PB*SZ" "nc"
+          "PB*D" "ny"
+          "PBG" "ng"
+          "PBG*D" "ngy" ;; TODO
+          "PBT" "nt"
+          "PBT*D" "nty"
+          "PBD" "nd"
+          "PBTD" "nted"
+          "PBTS" "nts"
+          "P" "p"
+            "PD" "ped" ;; TODO is pd used anywhere?
+            "PT" "pt"
+            "P*D" "py"
+          "*P" "lp"
+
+          "L" "l"
+            "LS" "ls"
+          "L*D" "ly"
+          "*L" "ll"
+          "^*LD" "lly"
+
+
+          "*FPT" "tch"
+
+          "LT" "lt"
+          "LD" "ld"
+
+          "PBLGS" "q"
+          "BGT" "cket"
+          "RBGT" "xt"
+
+          "GS" "tion"
+          "*BGS" "ction"
+
+          "*S" "ss"
+          "S" "s"
+          "*SZ" "c"
+          "*TSDZ" "ct"
+          "*FRT" "rst"
+          "*RS" "ster"
+          "*RSZ" "rc"
+          "RPBLG" "rj"
+          ; "*RS" "str"
+          "BG" "k"
+          "BGDZ" "king"
+          ;; TODO ned
+          "*BG" "ck"
+
+          "T" "t"
+          "*T" "th"
+          "TS" "ts"
+          "TD" "ted"
+
+          "GT" "ght"
+          "*GT" "gth"
+          "G" "g"
+          "D" "d"
+
+          "RPBD" "nder"
+          "*TD" "ty"
+          "^*TD" "tty"
+          }
+ :vowels {
+          "-" ""
+          "*" ""
+          "AOEU" "ie"
+          "AO*EU" "ua" ;; Yeah I got nothing
+          "AEU" "ai"
+          "AOE" "ee"
+          "AO*E" "ia" ;; FUCK
+          "AOU" "ew"
+          "AE" "ea"
+          "A*E" "ae"
+          "OU" "ou"
+          "O*U" "ow"
+          "EU" "i"
+          "AO" "oo"
+          "OEU" "oi"
+          "O*EU" "io" ;; Conflicts
+          "AO*" "oa"
+          "AU" "au"
+          "A*U" "aw"
+          "A" "a"
+          "O" "o"
+          "E" "e"
+          "U" "u"
+          }
+ :overrides {
+             ; "^WHR*UPB" "wn"
+             ; "^SWHR*UPB" "{^}wn"
+             ; "^WHR*EFPBL" "men"
+             ; "^SWHR*EFPBL" "{^}men"
+             ; "^WHRA*FPBL" "man"
+             ; "^SWHRA*FPBL" "{^}man"
+             ; "KWHR*UPB" "{>}wn"
+             ; "SKWHR*UPB" "{^}{>}wn"
+             ; "#KWHR*UPB" "{>}{-|}wn"
+             ; "#SKWHR*UPB" "{^}{-|}wn"
+             ;
+             ; "KWHREFPBL" "{>}men"
+             ; "SKWHREFPBL" "{^}{-|}men"
+             ; "#KWHREFPBL" "{-|}men"
+             ; "#SKWHREFPBL" "{^}{-|}men"
+             ;
+             ; "KWHRAFPBL" "{>}man"
+             ; "SKWHRAFPBL" "{^}{-|}man"
+             ; "#KWHRAFPBL" "{-|}man"
+             ; "#SKWHRAFPBL" "{^}{-|}man"
+
+             "WHRAO*SZ" "{>}soon"
+             "SWHRAO*SZ" "{^}{>}soon"
+             "#WHRAO*SZ" "{>}{-|}soon"
+             "#SWHRAO*SZ" "{^}{-|}soon"
+
+             "WHRAO*FRL" "{>}throa"
+             "SWHRAO*FRL" "{^}{>}throa"
+             "#WHRAO*FRL" "Throa"
+             "#SWHRAO*FRL" "{^}Throa"
+             "KWHR*EFBL" "vel"
+             "SKWHR*EFBL" "{^}{>}vel"
+             "#KWHR*EFBL" "{-|}vel"
+             "#SKWHR*EFBL" "{^}{-|}vel"
+             }
+ :version 2}
