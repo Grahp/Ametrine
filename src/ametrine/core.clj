@@ -5,7 +5,7 @@
 
 (defn -main
   [& args]
-  (let [config (utils/load-resource "config-1")
+  (let [config (utils/load-resource "config")
         output-file ((config :settings) :output-file)
         dict (merge (dict/generate
                       (config :starters)
