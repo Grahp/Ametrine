@@ -1,0 +1,14 @@
+;; User config file
+
+{:settings
+ {:output-file "ametrine.json"}
+ :starters {
+
+            }
+ :enders {
+
+          }
+ :vowels {
+
+          }
+ }
