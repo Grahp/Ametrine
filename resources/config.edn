@@ -87,6 +87,7 @@
             "RLG" "dr"
             "*RLG" "der"
             "PBLG" "g"
+            "^PBLG" "gg"
             "RPBLG" "gr"
             "FPBLG" "gh"
             "FRPBLG" "gl"
@@ -267,4 +268,4 @@
              ; "#SWHRAO*SZ" "{^}{-|}soon"
 
              }
- :version 3}
+ :version 4}
