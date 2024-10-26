@@ -12,6 +12,7 @@
             "FRS" "sl"
             "FRGS" "shr"
             "PS" "sp"
+            "RPS" "spr"
             "GS" "sk"
             "FS" "sh"
             "RS" "v"
@@ -36,7 +37,10 @@
               "FRPL" "fl"
               "RPL" "fr"
               "^PL" "ph"
+              "^RPL" "phr"
+              "^FRPL" "phl"
             "B" "w"
+            "^B" "ww"
             "RB" "wr"
             "FB" "wh"
 
@@ -75,12 +79,13 @@
 
             "PG" "x"
             "*GS" "ex"
-            "*PGS" "exp"
             "*LGS" "ext"
             "PGS" "exp"
+            "FRPGS" "expl"
 
             "F" "h"
             "FR" "l"
+            "*FR" "hr" ;; Pretty rare I would think.
             "^FR" "ll"
             "PB" "b"
             "FRPB" "bl"
@@ -115,6 +120,7 @@
           "*F" "lf"
           "*FB" "lv"
           "F" "f"
+          "^F" "ff"
           ; "*F" "ph"
           "FP" "ch"
           "FR" "m"
@@ -139,6 +145,8 @@
           "*FRPL" "mm"
           "FRB" "mb"
           "FRBL" "mbl"
+          "^FRB" "rv"
+          "^*FRB" "rf"
           "FRL" "ml"
           "FRPBG" "nk"
             "*FRPBG" "nc"
@@ -188,10 +196,11 @@
           "PBG" "ng"
           "PBG*D" "ngy" ;; TODO
           "PBT" "nt"
-          "PBT*D" "nty"
+            "PBT*D" "nty"
+            "*PBT" "nth"
+            "PBTD" "nted"
+            "PBTS" "nts"
           "PBD" "nd"
-          "PBTD" "nted"
-          "PBTS" "nts"
           "P" "p"
             "PD" "ped" ;; TODO is pd used anywhere?
             "PT" "pt"
@@ -246,6 +255,8 @@
           "*TD" "ty"
           "^*TD" "tty"
           ;; TODO mn dy
+          "PS" "h"
+          "*FBG" "sk"
           }
  :vowels {
           "-" ""
@@ -280,4 +291,4 @@
              ; "#SWHRAO*SZ" "{^}{-|}soon"
 
              }
- :version 4}
+ :version 5}
