@@ -12,8 +12,7 @@
                       user-file
                       ((config :settings) :output-file))]
 
-    (println "Config loaded.")
-
+    ;; TODO paralellize
     (-> (merge (dict/generate (config :starters) (config :vowels) (config :enders))
                (config :overrides)
                (dict/generate (user-config :starters) (user-config :vowels) (user-config :enders))

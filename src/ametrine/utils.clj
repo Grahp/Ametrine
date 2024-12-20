@@ -5,6 +5,18 @@
             [clojure.java.io :as io])
   (:import [java.nio.file Paths]))
 
+(defn stroke->str
+  [stroke]
+  (let [groups ["#^+" "STKPWHR" "AO*-EU" "FRPBLGTSDZ"]]
+    (apply str (mapcat
+                 #(filter (get stroke %1) %2)
+                 (range) groups))))
+
+(defn str->stroke
+  [str]
+  (when-let [match (re-matches #"^([\^]?[+]?[#]?)(.*?)([AOEU\-*]+)(.*)$" str)]
+    (mapv set (rest match))))
+
 (defn add-capitalized-entries
   "returns the entries passed in, including entries with #"
   [entries]
@@ -15,61 +27,14 @@
         entries))
 
 (defn starred
-  "Takes a stroke, and returns it's starred version
-  If it cannot be starred, returns the unmodified stroke"
+  "Returns the starred version of the given stroke"
   [stroke]
-  (if (some #(= \* %) stroke)
-    stroke
-    (or
-      (some (fn [[regex replacement]]
-              (when (re-find regex stroke)
-                (str/replace stroke regex replacement)))
-            [[#"AOEU" "AO*EU"]
-             [#"AOU" "AO*U"]
-             [#"AEU" "A*EU"]
-             [#"AOE" "AO*E"]
-             [#"OEU" "O*EU"]
-             [#"AO" "AO*"]
-             [#"EU" "*EU"]
-             [#"AE" "A*E"]
-             [#"AU" "A*U"]
-             [#"OE" "O*E"]
-             [#"OU" "O*U"]
-             [#"A" "A*"]
-             [#"O" "O*"]
-             [#"E" "*E"]
-             [#"U" "*U"]
-             [#"-" "*"]])
-      stroke)))
-
-(defn fix-carrot
-  "fixes the ^ thing (it's called a carrot right?) on all entries"
-  [entries]
-  (into {}
-        (map (fn [[k v]]
-               {(if (some #(= \^  %) k)
-                  (->> (str/replace k #"\^" "")
-                       (str "^"))
-                  k)
-                v})
-             entries)))
-
-(defn fix-stars
-  "Fixes the stars and shit on entries."
-  [entries]
-  (into {}
-        (map (fn [[k v]]
-               {(if (some #(= \* %) k)
-                  (-> (str/replace k #"\*\*" "-")
-                      (str/replace #"\*" "")
-                      starred)
-                  k)
-                v})
-             entries)))
+  (assoc stroke 2 (conj (stroke 2) \*)))
 
 (defn absolute-path?
   "Returns whether the given path (string) is absolute"
   [path]
+  ;; Some crazy java nonsense
   (-> (Paths/get path (into-array String []))
       .isAbsolute))
 
