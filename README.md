@@ -1,13 +1,7 @@
 # Ametrine
 
-Fingerspelling++ or Shrimple--
+Non-modal Orthospelling Dictionary with no dedicated key.
 
-Default dict is in the `resources/` dir.
+(Old) dict is in the `resource/` dir.
 
-# Todo
-
-- Customize Starters
-- Toggle suppress capitalization.
-- Make dict smaller (dict too big)
-- Put dicts in github release
-  - Ship a dict without `^+`
+Will be rewritten with [Quartz](https://github.com/grahp/quartz).
