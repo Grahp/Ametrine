@@ -9,8 +9,8 @@
   [stroke]
   (let [groups ["#^+" "STKPWHR" "AO*-EU" "FRPBLGTSDZ"]]
     (apply str (mapcat
-                 #(filter (get stroke %1) %2)
-                 (range) groups))))
+                #(filter (get stroke %1) %2)
+                (range) groups))))
 
 (defn str->stroke
   [str]
@@ -57,7 +57,7 @@
   [file]
   (try
     (edn/read-string
-      (slurp (io/resource (str file ".edn"))))
+     (slurp (io/resource (str file ".edn"))))
 
     (catch Exception e
       (println (.getMessage e))
