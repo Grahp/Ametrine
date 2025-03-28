@@ -1,4 +1,4 @@
-(ns ametrine.utils
+(ns dev.grahp.ametrine.utils
   (:require [clojure.string :as str]
             [clojure.edn :as edn]
             [clojure.data.json :as json]
@@ -29,7 +29,29 @@
 (defn starred
   "Returns the starred version of the given stroke"
   [stroke]
-  (assoc stroke 2 (conj (stroke 2) \*)))
+  (if (some #(= \* %) stroke)
+    stroke
+    (or
+      (some (fn [[regex replacement]]
+              (when (re-find regex stroke)
+                (str/replace stroke regex replacement)))
+            [[#"AOEU" "AO*EU"]
+             [#"AOU" "AO*U"]
+             [#"AEU" "A*EU"]
+             [#"AOE" "AO*E"]
+             [#"OEU" "O*EU"]
+             [#"AO" "AO*"]
+             [#"EU" "*EU"]
+             [#"AE" "A*E"]
+             [#"AU" "A*U"]
+             [#"OE" "O*E"]
+             [#"OU" "O*U"]
+             [#"A" "A*"]
+             [#"O" "O*"]
+             [#"E" "*E"]
+             [#"U" "*U"]
+             [#"-" "*"]])
+      stroke)))
 
 (defn absolute-path?
   "Returns whether the given path (string) is absolute"

@@ -1,6 +1,6 @@
-(ns ametrine.core
-  (:require [ametrine.utils :as utils]
-            [ametrine.dict :as dict])
+(ns dev.grahp.ametrine.core
+  (:require [dev.grahp.ametrine.utils :as utils]
+            [dev.grahp.ametrine.dict :as dict])
   (:gen-class))
 
 (defn -main

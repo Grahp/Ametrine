@@ -1,6 +1,6 @@
-(ns ametrine.dict
+(ns dev.grahp.ametrine.dict
   (:require [clojure.string :as str]
-            [ametrine.utils :as utils]))
+            [dev.grahp.ametrine.utils :as utils]))
 
 (defn apply-dict-fixes
   "Oops I broke some stuff"

@@ -4,6 +4,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.12.0"]
                  [org.clojure/data.json "2.5.0"]]
-  :main ^:skip-aot ametrine.core
+  :main ^:skip-aot dev.grahp.ametrine.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
