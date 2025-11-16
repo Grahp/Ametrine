@@ -1,5 +1,8 @@
 # Ametrine
 
-Non-modal Orthospelling Dictionary with no dedicated key.
+Old non-modal orthospelling dictionary.
 
 See https://grahp.dev/ametrine
+Or actually just see https://grahp.dev/pinchord because it's better lol
+
+(https://giveupgithub.org)
